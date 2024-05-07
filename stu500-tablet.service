@@ -1,0 +1,7 @@
+
+[Unit]
+Description=STU500 userlevel driver
+
+[Service]
+ExecStart=/usr/bin/python3 /usr/local/bin/stu500-tablet.py
+

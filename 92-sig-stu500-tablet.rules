@@ -1,0 +1,9 @@
+
+ACTION!="add|change", GOTO="sig_stu500_tablet_end"
+
+KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="056a", ATTRS{idProduct}=="00a1", \
+	TAG+="systemd", ENV{SYSTEMD_WANTS}="stu500-tablet"
+
+LABEL="sig_stu500_tablet_end"
+
+
